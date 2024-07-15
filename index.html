@@ -12,30 +12,18 @@
         <div class="game-area">
             <div class="inputs"></div>
             <div class="control">
-                <button class="check">Check Word</button>
-                <button class="hint">Hint</button>
-                <button class="play-again">Play Again</button>
+                <button id="submit">Submit</button>
+                <button id="hint">Hint</button>
+                <div class="message"></div>
             </div>
-            <div class="message"></div>
-        </div>
-
-        <div class="key-colors">
-            <h2>Key Colors</h2>
-            <div class="key-color">
-                <div class="key in-place"></div>
-                <div class="key-text">Letter is correct and in place</div>
-            </div>
-            <div class="key-color">
-                <div class="key not-in-place"></div>
-                <div class="key-text">Letter is correct but not in place</div>
-            </div>
-            <div class="key-color">
-                <div class="key no"></div>
-                <div class="key-text">Letter is wrong</div>
+            <div class="key-colors">
+                <div class="key-color"><div class="key in-place"></div><div class="key-text">Correct Letter</div></div>
+                <div class="key-color"><div class="key not-in-place"></div><div class="key-text">Wrong Position</div></div>
+                <div class="key-color"><div class="key no"></div><div class="key-text">Not in Word</div></div>
             </div>
         </div>
     </div>
-    <footer class="footer">Guess The Word - created by Youssef</footer>
+    <div class="footer">© 2024 Guess The Word</div>
     <script src="game.js"></script>
 </body>
 </html>
