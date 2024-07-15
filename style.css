@@ -90,10 +90,14 @@ input[type="text"] {
     animation: fadeIn 1s ease-in-out;
 }
 
-input[type="text"]:focus {
-    border-color: var(--input-focus);
-    outline: none;
-    transform: scale(1.1);
+input[type="text"] {
+    width: 10vw; /* Use viewport width for responsiveness */
+    height: 10vw; /* Use viewport width for responsiveness */
+    max-width: 30px; /* Set a maximum width */
+    max-height: 30px; /* Set a maximum height */
+    font-size: 4vw; /* Use viewport width for responsiveness */
+    max-font-size: 18px; /* Set a maximum font size */
+    margin: 2px;
 }
 
 .in-place {
