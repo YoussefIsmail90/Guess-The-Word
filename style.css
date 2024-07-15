@@ -91,14 +91,11 @@ input[type="text"] {
 }
 
 input[type="text"] {
-    width: 10vw; /* Use viewport width for responsiveness */
-    height: 10vw; /* Use viewport width for responsiveness */
-    max-width: 30px; /* Set a maximum width */
-    max-height: 30px; /* Set a maximum height */
-    font-size: 4vw; /* Use viewport width for responsiveness */
-    max-font-size: 18px; /* Set a maximum font size */
-    margin: 2px;
-}
+        width: auto;
+        height: auto;
+        font-size: auto;
+        margin: auto;
+    }
 
 .in-place {
     background-color: var(--success-color) !important;
