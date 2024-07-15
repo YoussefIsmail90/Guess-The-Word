@@ -55,6 +55,9 @@ h1 {
 
 .inputs {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .try-1, .try-2, .try-3, .try-4, .try-5, .try-6 {
@@ -242,7 +245,13 @@ button:hover {
         width: 30px;
         height: 30px;
         font-size: 18px;
-        margin: 0 2px;
+        margin: 2px;
+    }
+
+    .try-1 span, .try-2 span, .try-3 span, .try-4 span, .try-5 span, .try-6 span {
+        width: 50px;
+        font-size: 14px;
+        align-self: center;
     }
 
     .key {
