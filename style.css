@@ -58,15 +58,12 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
 }
 
 .try-1, .try-2, .try-3, .try-4, .try-5, .try-6 {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    width: 100%;
-    gap: 5px;
 }
 
 .try-1 span, .try-2 span, .try-3 span, .try-4 span, .try-5 span, .try-6 span {
@@ -90,12 +87,11 @@ input[type="text"] {
     animation: fadeIn 1s ease-in-out;
 }
 
-input[type="text"] {
-        width: auto;
-        height: auto;
-        font-size: auto;
-        margin: auto;
-    }
+input[type="text"]:focus {
+    border-color: var(--input-focus);
+    outline: none;
+    transform: scale(1.1);
+}
 
 .in-place {
     background-color: var(--success-color) !important;
@@ -256,10 +252,6 @@ button:hover {
         width: 50px;
         font-size: 14px;
         align-self: center;
-    }
-
-    .try-1, .try-2, .try-3, .try-4, .try-5, .try-6 {
-        gap: 2px;
     }
 
     .key {
